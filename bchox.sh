@@ -1,3 +1,5 @@
+# Set Hyprland config file
+
 # Install fish shell
 
 # Set fish shell as main
@@ -10,4 +12,6 @@
 
 # Install Powerline-shell
 
-#
+# Set Powerline-shell configuration
+
+
