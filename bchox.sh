@@ -10,8 +10,6 @@ makepkg -si
 cd ~/
 rm -rf ~/github/yay
 
-
-
 ##====INSTALL ALL YAY PACKAGES====##
 install_packages() {
     local packages="$@"  # Capture all the packages passed as parameters.
@@ -20,13 +18,13 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww
-
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww extra/firefox
 ##====DONE INSTALLING PACKAGES====##
 
-# Install fish shell and kitty terminal
+# Download wallpapers
 
-sudo pacman -S fish kitty
+cd ~
+git clone https://gitlab.com/stephan-raabe/wallpaper.git
 
 # Set fish configuration
 
@@ -38,13 +36,9 @@ cp .config/fish/config.fish ~/.config/fish/config.fish
 mkdir ~/.config/kitty
 cp .config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
-# Download nerd fonts
-
-
-
-# Install Powerline-shell
-
 # Set Powerline-shell configuration
+
+
 
 # Download wallpapers in ~/wallpaper
 
