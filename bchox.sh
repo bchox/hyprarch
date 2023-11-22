@@ -11,6 +11,7 @@ cd ~/
 rm -rf ~/github/yay
 
 ##====INSTALL ALL YAY PACKAGES====##
+
 install_packages() {
     local packages="$@"  # Capture all the packages passed as parameters.
 
@@ -19,9 +20,10 @@ install_packages() {
 
 # Install the specified packages.
 install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww extra/firefox
+
 ##====DONE INSTALLING PACKAGES====##
 
-# Download wallpapers
+# Download wallpapers in ~/wallpaper
 
 cd ~
 git clone https://gitlab.com/stephan-raabe/wallpaper.git
@@ -38,9 +40,12 @@ cp .config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 # Set Powerline-shell configuration
 
+cp .config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
+mkdir -p ~/.config/powerline-shell/themes
+cp .config/powerline-shell/themes/flames.py ~/.config/powerline-shell/themes/flames.py
+cp .config/powerline-shell/config.json ~/.config/powerline-shell/config.json
 
-
-# Download wallpapers in ~/wallpaper
+# Configure SWWW script
 
 # Set Hyprland config file
 
