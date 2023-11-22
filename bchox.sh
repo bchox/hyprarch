@@ -10,23 +10,19 @@ makepkg -si
 cd ~/
 rm -rf ~/github/yay
 
-# Install packages using yay package manager.
 
-# @param $1: The packages to install.
+
+##====INSTALL ALL YAY PACKAGES====##
 install_packages() {
     local packages="$@"  # Capture all the packages passed as parameters.
 
     yay -S --noconfirm $packages
 }
 
-# Usage example for install_packages.sh
+# Install the specified packages.
+install_packages 
 
-# Example: Install the specified packages.
-install_packages hyprland polkit-kde-agent ffmpeg neovim viewnior rofi brightnessctl \
-    pavucontrol thunar starship wl-clipboard wf-recorder swaybg thunar-archive-plugin \
-    grimblast-git ffmpegthum
-
-
+##====DONE INSTALLING PACKAGES====##
 
 # Install fish shell and kitty terminal
 
