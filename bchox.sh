@@ -1,7 +1,3 @@
-# Set Hyprland config file
-
-cp .config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
-
 # Install yay
 
 sudo pacman -S --needed base-devel git
@@ -19,8 +15,12 @@ sudo pacman -S fish kitty
 
 # Set fish configuration
 
+mkdir ~/.config/fish
+cp .config/fish/config.fish ~/.config/fish/config.fish
+
 # Set kitty configuration
 
+mkdir ~/.config/kitty
 cp .config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 # Download nerd fonts
@@ -32,3 +32,7 @@ cp .config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 # Set Powerline-shell configuration
 
 # Download wallpapers in ~/wallpaper
+
+# Set Hyprland config file
+
+cp .config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
