@@ -20,7 +20,7 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages 
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww
 
 ##====DONE INSTALLING PACKAGES====##
 
