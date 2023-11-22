@@ -1,17 +1,34 @@
 # Set Hyprland config file
 
-# Install fish shell
+cp .config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
 
-# Set fish shell as main
+# Install yay
 
-# Install Kitty terminal
+sudo pacman -S --needed base-devel git
+mkdir ~/github
+cd github
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ~/
+rm -rf ~/github/yay
+
+# Install fish shell and kitty terminal
+
+sudo pacman -S fish kitty
+
+# Set fish configuration
 
 # Set kitty configuration
 
+cp .config/kitty/kitty.conf ~/.config/kitty/kitty.conf
+
 # Download nerd fonts
+
+
 
 # Install Powerline-shell
 
 # Set Powerline-shell configuration
 
-
+# Download wallpapers in ~/wallpaper
