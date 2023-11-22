@@ -40,7 +40,7 @@ cp .config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 # Set Powerline-shell configuration
 
-cp .config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
+sudo cp .config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
 mkdir -p ~/.config/powerline-shell/themes
 cp .config/powerline-shell/themes/flames.py ~/.config/powerline-shell/themes/flames.py
 cp .config/powerline-shell/config.json ~/.config/powerline-shell/config.json
