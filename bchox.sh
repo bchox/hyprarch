@@ -23,7 +23,7 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox core/nano extra/neovim extra/fisher
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox core/nano extra/neovim extra/fisher extra/github-cli
 
 ##====DONE INSTALLING PACKAGES====##
 
