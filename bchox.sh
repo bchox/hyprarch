@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Get the directory of the script
+script_dir=$(dirname "$(readlink -f "$0")")
+
 # Install yay
 
 sudo pacman -S --needed base-devel git
@@ -31,26 +35,26 @@ git clone https://gitlab.com/stephan-raabe/wallpaper.git
 # Set fish configuration
 config_fish=~/.config/fish
 mkdir -p $config_fish
-cp -f .config/fish/config.fish $config_fish/config.fish
+cp -f $script_dir/.config/fish/config.fish $config_fish/config.fish
 
 # Set kitty configuration
 config_kitty=~/.config/kitty
 mkdir -p $config_kitty
-cp -f .config/kitty/kitty.conf $config_kitty/kitty.conf
+cp -f $script_dir/.config/kitty/kitty.conf $config_kitty/kitty.conf
 
 # Set Powerline-shell configuration
 config_powerline=~/.config/powerline-shell
 mkdir -p $config_powerline/themes
-sudo cp -f .config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
-cp -f .config/powerline-shell/themes/flames.py $config_powerline/themes/flames.py
-cp -f .config/powerline-shell/config.json $config_powerline/config.json
+sudo cp -f $script_dir/.config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
+cp -f $script_dir/.config/powerline-shell/themes/flames.py $config_powerline/themes/flames.py
+cp -f $script_dir/.config/powerline-shell/config.json $config_powerline/config.json
 
 # Set SWWW Random script
 config_swww=~/.config/swww
 mkdir -p $config_swww
-cp -f .config/swww/swwwran.sh $config_swww/swwwran.sh
+cp -f &script_dir/.config/swww/swwwran.sh $config_swww/swwwran.sh
 
 # Set Hyprland config file
 config_hypr=~/.config/hypr
 mkdir -p $config_hypr
-cp -f .config/hypr/hyprland.conf $config_hypr/hyprland.conf
+cp -f $script_dir/.config/hypr/hyprland.conf $config_hypr/hyprland.conf
