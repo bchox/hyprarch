@@ -8,13 +8,8 @@ set fish_greeting ""
 cd ~/
 
 # Starting applications / commands
-# neofetch
+# neo
 
 # Alias commands
 alias ll="ls -l -a"
 alias leggo="Hyprland"
-
-# Have Powerline Shell take control of the prompt
-function fish_prompt
-	powerline-shell --shell bare $status
-end

@@ -23,7 +23,7 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww extra/firefox extra/waybar
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox
 
 ##====DONE INSTALLING PACKAGES====##
 
@@ -43,11 +43,11 @@ mkdir -p $config_kitty
 cp -f $script_dir/.config/kitty/kitty.conf $config_kitty/kitty.conf
 
 # Set Powerline-shell configuration
-config_powerline=~/.config/powerline-shell
-mkdir -p $config_powerline/themes
-sudo cp -f $script_dir/.config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
-cp -f $script_dir/.config/powerline-shell/themes/flames.py $config_powerline/themes/flames.py
-cp -f $script_dir/.config/powerline-shell/config.json $config_powerline/config.json
+#config_powerline=~/.config/powerline-shell
+#mkdir -p $config_powerline/themes
+#sudo cp -f $script_dir/.config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
+#cp -f $script_dir/.config/powerline-shell/themes/flames.py $config_powerline/themes/flames.py
+#cp -f $script_dir/.config/powerline-shell/config.json $config_powerline/config.json
 
 # Set SWWW Random script
 config_swww=~/.config/swww
