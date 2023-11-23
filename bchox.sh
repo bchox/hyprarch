@@ -23,7 +23,7 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox core/nano extra/neovim extra/fisher
 
 ##====DONE INSTALLING PACKAGES====##
 
@@ -52,7 +52,7 @@ cp -f $script_dir/.config/kitty/kitty.conf $config_kitty/kitty.conf
 # Set SWWW Random script
 config_swww=~/.config/swww
 mkdir -p $config_swww
-cp -f &script_dir/.config/swww/swwwran.sh $config_swww/swwwran.sh
+cp -f $script_dir/.config/swww/swwwran.sh $config_swww/swwwran.sh
 
 # Set Hyprland config file
 config_hypr=~/.config/hypr
