@@ -19,7 +19,7 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww extra/firefox
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww extra/firefox extra/waybar
 
 ##====DONE INSTALLING PACKAGES====##
 
@@ -31,26 +31,26 @@ git clone https://gitlab.com/stephan-raabe/wallpaper.git
 # Set fish configuration
 config_fish=~/.config/fish
 mkdir -p $config_fish
-cp .config/fish/config.fish $config_fish/config.fish
+cp -f .config/fish/config.fish $config_fish/config.fish
 
 # Set kitty configuration
 config_kitty=~/.config/kitty
 mkdir -p $config_kitty
-cp .config/kitty/kitty.conf $config_kitty/kitty.conf
+cp -f .config/kitty/kitty.conf $config_kitty/kitty.conf
 
 # Set Powerline-shell configuration
 config_powerline=~/.config/powerline-shell
 mkdir -p $config_powerline/themes
-cp .config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
-cp .config/powerline-shell/themes/flames.py $config_powerline/themes/flames.py
-cp .config/powerline-shell/config.json $config_powerline/config.json
+sudo cp -f .config/powerline-shell/__init__.py /usr/lib/python3.11/site-packages/powerline-shell/__init__.py
+cp -f .config/powerline-shell/themes/flames.py $config_powerline/themes/flames.py
+cp -f .config/powerline-shell/config.json $config_powerline/config.json
 
 # Set SWWW Random script
 config_swww=~/.config/swww
 mkdir -p $config_swww
-cp .config/swww/swwwran.sh $config_swww/swwwran.sh
+cp -f .config/swww/swwwran.sh $config_swww/swwwran.sh
 
 # Set Hyprland config file
 config_hypr=~/.config/hypr
 mkdir -p $config_hypr
-cp .config/hypr/hyprland.conf $config_hypr/hyprland.conf
+cp -f .config/hypr/hyprland.conf $config_hypr/hyprland.conf
