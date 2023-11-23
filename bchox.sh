@@ -1,6 +1,6 @@
 #!/bin/bash
-# Install yay
 
+# Install yay
 sudo pacman -S --needed base-devel git
 mkdir ~/github
 cd github
@@ -19,12 +19,11 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww extra/firefox
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/powerline-shell aur/swww extra/firefox extra/waybar
 
 ##====DONE INSTALLING PACKAGES====##
 
 # Download wallpapers in ~/wallpaper
-
 cd ~
 git clone https://gitlab.com/stephan-raabe/wallpaper.git
 
