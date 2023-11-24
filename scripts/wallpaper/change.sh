@@ -21,3 +21,14 @@ else
   # No wallpapers available or the current one is the only option
   printf "It was not possible to change the wallpaper because it is either missing or such wallpaper is already installed.\n"
 fi
+
+# Get the new wallpaper
+newwp="$(swww query | grep -o -m 1 -P '(?<=image: ).*')"
+
+# Wallpy grab colors of new wallpaper\
+wal -q -i "$newwp"
+
+# Restart Waybar
+killall waybar
+sleep 0.2
+waybar
