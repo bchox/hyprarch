@@ -12,4 +12,5 @@ cd ~/
 
 # Alias commands
 alias ll="ls -l -a"
-alias leggo="Hyprland"
+alias vi="nvim"
+

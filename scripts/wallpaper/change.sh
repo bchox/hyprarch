@@ -24,6 +24,7 @@ fi
 
 # Get the new wallpaper
 newwp="$(swww query | grep -o -m 1 -P '(?<=image: ).*')"
+cp -f $newwp ~/.cache/current_wallpaper.jpg
 
 # Wallpy grab colors of new wallpaper\
 wal -q -i "$newwp"

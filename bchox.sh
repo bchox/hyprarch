@@ -26,9 +26,15 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox core/nano aur/nvchad-git extra/fisher extra/github-cli extra/neofetch extra/htop extra/rofi extra/pavucontrol extra/python-pywal extra/thunar extra/gtk4
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox core/nano aur/nvchad-git extra/fisher extra/github-cli extra/neofetch extra/htop extra/rofi extra/pavucontrol extra/python-pywal extra/thunar extra/gtk4 extra/bluez extra/bluez-utils extra/blueman aur/spotify aur/microsoft-edge-dev-bin extra/swaylock 
 
 ##====DONE INSTALLING PACKAGES====##
+
+# Enable Configure and copy bluetooth settings
+blue_conf=etc/bluetooth/main.conf
+sudo cp -f $script_dir/$blue_conf /$blue_conf
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
 
 # Download wallpapers in ~/wallpaper
 
