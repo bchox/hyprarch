@@ -26,7 +26,7 @@ install_packages() {
 }
 
 # Install the specified packages.
-install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox core/nano aur/nvchad-git extra/fisher extra/github-cli extra/neofetch extra/htop extra/rofi extra/pavucontrol extra/python-pywal extra/thunar extra/gtk4 extra/bluez extra/bluez-utils extra/blueman aur/spotify aur/microsoft-edge-dev-bin extra/swaylock 
+install_packages extra/fish extra/kitty extra/ttf-sourcecodepro-nerd aur/swww extra/firefox core/nano aur/nvchad-git extra/fisher extra/github-cli extra/neofetch extra/htop extra/rofi extra/pavucontrol extra/python-pywal extra/thunar extra/gtk4 extra/bluez extra/bluez-utils extra/blueman aur/spotify aur/microsoft-edge-beta-bin extra/swaylock 
 
 ##====DONE INSTALLING PACKAGES====##
 

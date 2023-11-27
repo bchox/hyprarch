@@ -13,7 +13,7 @@
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
-@import '../../.cache/wal/colors-waybar.css';
+@import '../../.cache/wal/colors-placeholders.css';
 
 /* -----------------------------------------------------
  * General 
@@ -39,7 +39,7 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-    background: @workspacesbackground1;
+    background: @color8;
     margin: 2px 1px 3px 1px;
     padding: 0px 1px;
     border-radius: 15px;
@@ -48,7 +48,7 @@ window#waybar {
     font-style: normal;
     opacity: 0.8;
     font-size: 16px;
-    color: @textcolor1;
+    color: @color8;
 }
 
 #workspaces button {
@@ -56,15 +56,15 @@ window#waybar {
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: @textcolor1;
-    background-color: @workspacesbackground2;
+    color: @color8;
+    background-color: #FFFFFF;
     transition: all 0.3s ease-in-out;
     opacity: 0.4;
 }
 
 #workspaces button.active {
-    color: @textcolor1;
-    background: @workspacesbackground2;
+    color: @color8;
+    background: #FFFFFF;
     border-radius: 15px;
     min-width: 40px;
     transition: all 0.3s ease-in-out;
@@ -72,8 +72,8 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    color: @textcolor1;
-    background: @workspacesbackground2;
+    color: @color1;
+    background: #FFFFFF;
     border-radius: 15px;
     opacity:0.7;
 }
@@ -84,14 +84,14 @@ window#waybar {
 
 tooltip {
     border-radius: 10px;
-    background-color: @backgroundlight;
+    background-color: @color8;
     opacity:0.8;
     padding:20px;
     margin:0px;
 }
 
 tooltip label {
-    color: @textcolor2;
+    color: #FFFFFF;
 }
 
 /* -----------------------------------------------------
@@ -99,11 +99,11 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #window {
-    background: @backgroundlight;
+    background: @color8;
     margin: 5px 15px 5px 0px;
     padding: 2px 10px 0px 10px;
     border-radius: 12px;
-    color:@textcolor2;
+    color:#FFFFFF;
     font-size:16px;
     font-weight:normal;
     opacity:0.8;
@@ -118,14 +118,14 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #taskbar {
-    background: @backgroundlight;
+    background: @color8;
     margin: 3px 15px 3px 0px;
     padding:0px;
     border-radius: 15px;
     font-weight: normal;
     font-style: normal;
     opacity:0.8;
-    border: 3px solid @backgroundlight;
+    border: 3px solid @color8;
 }
 
 #taskbar button {
@@ -168,7 +168,7 @@ window#waybar.empty #window {
     font-size: 20px;
     font-weight: bold;
     opacity: 0.8;
-    color: @iconcolor;
+    color: @color8;
 }
 
 #custom-wallpaper, #custom-keybindings {
@@ -180,14 +180,14 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-appmenu, #custom-appmenuwlr {
-    background-color: @backgrounddark;
+    background-color: #FFFFFF;
     font-size: 16px;
-    color: @textcolor1;
+    color: @color8;
     border-radius: 15px;
     padding: 0px 10px 0px 10px;
     margin: 3px 15px 3px 14px;
     opacity:0.8;
-    border:3px solid @bordercolor;
+    border:3px solid @color8;
 }
 
 /* -----------------------------------------------------
@@ -198,7 +198,7 @@ window#waybar.empty #window {
     margin: 0px 20px 0px 0px;
     padding:0px;
     font-size:20px;
-    color: @iconcolor;
+    color: @color8;
 }
 
 /* -----------------------------------------------------
@@ -206,9 +206,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-updates {
-    background-color: @backgroundlight;
+    background-color: @color8;
     font-size: 16px;
-    color: @textcolor2;
+    color: #FFFFFF;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -216,7 +216,7 @@ window#waybar.empty #window {
 }
 
 #custom-updates.green {
-    background-color: @backgroundlight;
+    background-color: @color8;
 }
 
 #custom-updates.yellow {
@@ -234,9 +234,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-youtube {
-    background-color: @backgroundlight;
+    background-color: @color8;
     font-size: 16px;
-    color: @textcolor2;
+    color: #FFFFFF;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -251,7 +251,7 @@ window#waybar.empty #window {
     margin:0px;
     padding:0px;
     font-size:16px;
-    color:@iconcolor;
+    color:@color8;
 }
 
 #memory {
@@ -263,14 +263,14 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: @backgrounddark;
+    background-color: #FFFFFF;
     font-size: 16px;
-    color: @textcolor1;
+    color: @color8;
     border-radius: 15px;
     padding: 1px 10px 0px 10px;
     margin: 3px 15px 3px 0px;
     opacity:0.8;
-    border:3px solid @bordercolor;   
+    border:3px solid @color8;   
 }
 
 /* -----------------------------------------------------
@@ -278,9 +278,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    background-color: @backgroundlight;
+    background-color: @color8;
     font-size: 16px;
-    color: @textcolor2;
+    color: #FFFFFF;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -288,8 +288,8 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-    background-color: @backgrounddark;
-    color: @textcolor1;
+    background-color: #FFFFFF;
+    color: @color8;
 }
 
 /* -----------------------------------------------------
@@ -297,9 +297,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #network {
-    background-color: @backgroundlight;
+    background-color: @color8;
     font-size: 16px;
-    color: @textcolor2;
+    color: #FFFFFF;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -307,13 +307,13 @@ window#waybar.empty #window {
 }
 
 #network.ethernet {
-    background-color: @backgroundlight;
-    color: @textcolor2;
+    background-color: @color8;
+    color: #FFFFFF;
 }
 
 #network.wifi {
-    background-color: @backgroundlight;
-    color: @textcolor2;
+    background-color: @color8;
+    color: #FFFFFF;
 }
 
 /* -----------------------------------------------------
@@ -321,9 +321,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #bluetooth, #bluetooth.on, #bluetooth.connected {
-    background-color: @backgroundlight;
+    background-color: @color8;
     font-size: 16px;
-    color: @textcolor2;
+    color: #FFFFFF;
     border-radius: 15px;
     padding: 2px 10px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -341,9 +341,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #battery {
-    background-color: @backgroundlight;
+    background-color: @color8;
     font-size: 16px;
-    color: @textcolor2;
+    color: #FFFFFF;
     border-radius: 15px;
     padding: 2px 15px 0px 10px;
     margin: 5px 15px 5px 0px;
@@ -351,20 +351,20 @@ window#waybar.empty #window {
 }
 
 #battery.charging, #battery.plugged {
-    color: @textcolor2;
-    background-color: @backgroundlight;
+    color: #FFFFFF;
+    background-color: @color8;
 }
 
 @keyframes blink {
     to {
-        background-color: @backgroundlight;
-        color: @textcolor2;
+        background-color: @color8;
+        color: #FFFFFF;
     }
 }
 
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: @textcolor3;
+    color: #FFFFFF;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
